@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS tasks (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+content TEXT NOT NULL
+);
+
+INSERT INTO tasks (content) VALUES (
+	"Hacer una app TODO"
+);
