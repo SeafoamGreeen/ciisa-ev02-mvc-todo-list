@@ -60,11 +60,6 @@ class TaskController {
     const content = req.body.content
     try {
       const task = { content, id }
-
-      if (!task[0]) {
-        res.status(404).render('404')
-        return
-      }
       await this.tasksDAO.update(task)
       console.log('checking data update', { task })
       res.redirect('/')
